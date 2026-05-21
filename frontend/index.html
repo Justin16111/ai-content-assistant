@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>AI Content Assistant</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  />
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="theme-toggle">
+
+  <button id="themeBtn">
+    Toggle Theme
+  </button>
+
+</div>
+
+    <h1>AI Content Assistant</h1>
+
+    <!-- Prompt Input -->
+    <textarea
+      id="prompt"
+      placeholder="Enter your prompt..."
+    ></textarea>
+
+    <!-- Content Type -->
+    <select id="contentType">
+
+      <option value="email">
+        Email
+      </option>
+
+      <option value="linkedin">
+        LinkedIn Post
+      </option>
+
+      <option value="caption">
+        Caption
+      </option>
+
+      <option value="blog">
+        Blog Ideas
+      </option>
+
+    </select>
+
+    <!-- Tone -->
+    <select id="tone">
+
+      <option value="Professional">
+        Professional
+      </option>
+
+      <option value="Friendly">
+        Friendly
+      </option>
+
+      <option value="Casual">
+        Casual
+      </option>
+
+      <option value="Marketing">
+        Marketing
+      </option>
+
+    </select>
+
+    <!-- Word Count -->
+    <input
+      type="number"
+      id="wordCount"
+      placeholder="Word Count"
+      value="120"
+    />
+
+    <!-- Buttons -->
+    <div class="button-group">
+
+      <button id="generateBtn">
+        Generate Content
+      </button>
+
+      <button id="copyBtn">
+        Copy
+      </button>
+
+    </div>
+
+    <!-- Response -->
+    <div id="responseOutput">
+
+      Generated content will appear here...
+
+    </div>
+    <!-- Prompt History -->
+
+<div class="history-section">
+
+  <h2>Recent Prompts</h2>
+
+  <div id="historyList"></div>
+
+</div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
