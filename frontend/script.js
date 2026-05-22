@@ -57,7 +57,7 @@ async function generateContent() {
       "Generating content...";
 
     const response = await fetch(
-      "http://localhost:5000/generate",
+      "https://ai-content-assistant-b0k6.onrender.com/generate",
       {
         method: "POST",
 
